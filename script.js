@@ -21,14 +21,32 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// function changeLanguage(lang) {
-//   if (lang === "sk") {
-//     window.location.href = "index.html";
-//   } else if (lang === "en") {
-//     window.location.href = "terapiecesta_en.html";
-//   }
+// HAMBURGER MENU - <DIV CLASS="MENU-ICON">
 
-// ak by si mala aj CZ, pridaj ďalší else if:
-// else if (lang === "cz") {
-//   window.location.href = "terapiecesta_cz.html";
-// }
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon = document.querySelector('.menu-icon i');
+  const nav = document.querySelector('nav');
+
+  if (menuIcon && nav) {
+    menuIcon.addEventListener('click', () => {
+      // prepínanie ikony
+      menuIcon.classList.toggle('fa-bars');
+      menuIcon.classList.toggle('fa-xmark');
+
+      // zobrazenie/skrytie menu
+      nav.classList.toggle('show');
+    });
+  }
+});
+
+// const menuIcon = document.querySelector('.menu-icon i');
+// const nav = document.querySelector('nav');
+
+// menuIcon.addEventListener('click', () => {
+//   // prepínanie ikony
+//   menuIcon.classList.toggle('fa-bars');
+//   menuIcon.classList.toggle('fa-xmark');
+
+//   // zobrazenie/skrytie menu
+//   nav.classList.toggle('show');
+// });
