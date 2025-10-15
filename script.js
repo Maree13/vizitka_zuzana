@@ -1,5 +1,6 @@
 console.log('JavaScript je pripojený! 🪄');
 
+// PREPÍNANIE JAZYKOV
 function changeLanguage(lang) {
   if (lang === 'sk') {
     window.location.href = 'index.html';
@@ -8,22 +9,20 @@ function changeLanguage(lang) {
   }
 }
 
-// 🔸 Po načítaní stránky automaticky zistí, kde sme, a skryje tlačidlo aktuálneho jazyka
+// Po načítaní stránky
 document.addEventListener('DOMContentLoaded', () => {
+  // 🔹 SKRYTIE TLAČIDLA AKTUÁLNEHO JAZYKA
   const currentFile = window.location.pathname.split('/').pop();
-
   if (currentFile.includes('_en')) {
     // sme na anglickej stránke → skry EN tlačidlo
-    document.querySelector("button[onclick*='en']").style.display = 'none';
+    const enButton = document.querySelector("button[onclick*='en']");
+    if (enButton) enButton.style.display = 'none';
   } else {
     // sme na slovenskej stránke → skry SK tlačidlo
-    document.querySelector("button[onclick*='sk']").style.display = 'none';
-  }
-});
+    const skButton = document.querySelector("button[onclick*='sk']");
+    if (skButton) skButton.style.display = 'none';
+  } // 🔹 HAMBURGER MENU
 
-// HAMBURGER MENU - <DIV CLASS="MENU-ICON">
-
-document.addEventListener('DOMContentLoaded', () => {
   const menuIcon = document.querySelector('.menu-icon i');
   const nav = document.querySelector('nav');
 
@@ -31,22 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     menuIcon.addEventListener('click', () => {
       // prepínanie ikony
       menuIcon.classList.toggle('fa-bars');
-      menuIcon.classList.toggle('fa-xmark');
+      menuIcon.classList.toggle('fa-xmark'); // zobrazenie/skrytie menu
 
-      // zobrazenie/skrytie menu
       nav.classList.toggle('show');
     });
   }
 });
-
-// const menuIcon = document.querySelector('.menu-icon i');
-// const nav = document.querySelector('nav');
-
-// menuIcon.addEventListener('click', () => {
-//   // prepínanie ikony
-//   menuIcon.classList.toggle('fa-bars');
-//   menuIcon.classList.toggle('fa-xmark');
-
-//   // zobrazenie/skrytie menu
-//   nav.classList.toggle('show');
-// });
