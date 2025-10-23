@@ -258,11 +258,10 @@ h2 {
 
 
   .button-language {
-    margin: 0px;
+    margin: 0;
     font-size: 30px;
     padding: 0px;
     border: none;
     background-color: transparent;
-    margin-right: 15px;
   }
 }
