@@ -201,6 +201,7 @@ h2 {
   nav.show {
     display: flex;
     /* zobrazí sa po kliknutí */
+    margin-top: -20px;
   }
 
   .menu-icon {
@@ -234,6 +235,7 @@ h2 {
     width: 55px;
     height: 55px;
     margin: 0;
+    margin-left: 15px;
   }
 
   /* test */
@@ -261,5 +263,6 @@ h2 {
     padding: 0px;
     border: none;
     background-color: transparent;
+    margin-right: 15px;
   }
 }
