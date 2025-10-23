@@ -76,12 +76,15 @@ a {
   height: 70px;
   border-radius: 50%;
   font-family: "Reenie Beanie", cursive;
-  font-size: 24px;
+  /* font-size: 24px; */
   padding: 20px;
   letter-spacing: 2px;
   text-align: center;
   margin: 50px;
   order: 2;
+  border: none;
+  background-color: transparent;
+  font-size: 36px;
 }
 
 /* HAMBURGER MENU ICON */
@@ -167,6 +170,14 @@ h2 {
   border-style: solid;
   border-color: var(--black-licorice);
   padding: 5px;
+}
+
+.ez-icon {
+  display: block;
+  margin: 1.2rem auto;
+  color: var(--black-licorice);
+  width: 2rem;
+  height: 2rem;
 }
 
 /* /////////////////////////////////// */
