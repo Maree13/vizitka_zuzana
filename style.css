@@ -106,6 +106,7 @@ a {
   /* nastavíš podľa potreby, napr. 60vh alebo 500px */
   background-image: url('images/hero03.jpg');
   background-size: cover;
+  background-position: right top;
   /* vyplní celý priestor */
   background-position: start;
   /* zameria stred obrázka */
