@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="visibility: hidden">
+<html lang="sk" style="visibility: hidden">
   <!-- Mariana Šarovič -->
   <!-- sarovicmariana@gmail.com -->
   <!-- DiscordJmeno mari_34255 -->
@@ -374,6 +374,71 @@
       <span>Design: Mariana Sarovic</span>
       <span>© 2025 - Mariana Sarovic. All Rights Reserved.</span>
     </section>
+
+    <!-- Cookie banner HTML -->
+    <div
+      id="cookie-banner"
+      style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #222;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        z-index: 1000;
+        display: none;
+        font-family: sans-serif;
+      "
+    >
+      <span id="cookie-message"></span>
+      <button
+        id="accept-cookies"
+        style="
+          margin-left: 10px;
+          padding: 5px 10px;
+          border: none;
+          background: #fff;
+          color: #222;
+          cursor: pointer;
+          font-weight: bold;
+        "
+      >
+        Súhlasím
+      </button>
+    </div>
+
+    <!-- Cookie banner JS -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const banner = document.getElementById('cookie-banner');
+        const acceptBtn = document.getElementById('accept-cookies');
+        const message = document.getElementById('cookie-message');
+        const lang = document.documentElement.lang; // "sk" alebo "en"
+
+        // nastavíme text podľa jazyka
+        if (lang === 'en') {
+          message.textContent =
+            'This site uses cookies to improve your experience.';
+          acceptBtn.textContent = 'Accept';
+        } else {
+          message.textContent =
+            'Táto stránka používa cookies pre lepší zážitok.';
+          acceptBtn.textContent = 'Súhlasím';
+        }
+
+        // skontrolujeme, či už súhlas existuje
+        if (!localStorage.getItem('cookiesAccepted')) {
+          banner.style.display = 'block';
+        }
+
+        acceptBtn.addEventListener('click', () => {
+          localStorage.setItem('cookiesAccepted', 'true');
+          banner.style.display = 'none';
+        });
+      });
+    </script>
 
     <script src="../script.js"></script>
   </body>
