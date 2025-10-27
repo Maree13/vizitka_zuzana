@@ -5,7 +5,7 @@ function changeLanguage(lang) {
   if (lang === 'sk') {
     window.location.href = 'index.html';
   } else if (lang === 'en') {
-    window.location.href = 'terapiecesta_en.html';
+    window.location.href = 'metodacesta_en.html';
   }
 }
 
