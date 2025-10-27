@@ -258,6 +258,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-position: right top;
   }
 
   .button-herotitle {
