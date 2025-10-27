@@ -11,6 +11,7 @@ function changeLanguage(lang) {
 
 // Po načítaní stránky
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.add('loaded');
   // 🔹 SKRYTIE TLAČIDLA AKTUÁLNEHO JAZYKA
   const currentFile = window.location.pathname.split('/').pop();
   if (currentFile.includes('_en')) {

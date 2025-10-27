@@ -1,8 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="visibility: hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- loading loga -->
+    <!-- vlož do <head> na úplne začiatok -->
+    <link rel="preload" as="image" href="images/logo_sk.png" />
+    <link rel="preload" as="image" href="images/logo_en.png" />
+
+    <script>
+      (function () {
+        // 1) Predbežné vloženie CSS, ktoré skryje správne tlačidlo a logo (okamžite)
+        const path = window.location.pathname;
+        const css = document.createElement('style');
+        // skryjeme aktuálne tlačidlo (podľa názvu triedy)
+        if (path.includes('_en')) {
+          css.innerHTML =
+            '.button_en { display: none !important; } .site-logo { visibility: hidden; }';
+        } else {
+          css.innerHTML =
+            '.button_sk { display: none !important; } .site-logo { visibility: hidden; }';
+        }
+        document.head.appendChild(css);
+
+        // 2) Funkcia ktorá "odomkne" stránku, keď je všetko pripravené
+        function showPage() {
+          // odkomentuj ak chceš fade-in cez class; tu používame priame nastavenie
+          document.documentElement.style.visibility = 'visible';
+          // zobraz logo (ak ho chceš len po tom co je pripravené)
+          const logo = document.querySelector('.site-logo');
+          if (logo) logo.style.visibility = 'visible';
+        }
+
+        // 3) Počkame na DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function () {
+          // malá istota pre načítané obrázky/stylesheety
+          // ak potrebuješ čakať na obrázky, môžeš sem pridať kontrolu, napr. wait for logo complete
+          showPage();
+        });
+
+        // 4) Ošetrenie back/forward cache (pageshow) — dôležité pre "vracanie sa späť"
+        window.addEventListener('pageshow', function (ev) {
+          if (ev.persisted) {
+            // ak prišlo z bfcache, DOMContentLoaded možno nepadol -> okamžite zobrazíme
+            showPage();
+          }
+        });
+      })();
+    </script>
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +66,22 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <title>Terapia Cesta EN</title>
+    <!-- SCRIPT NA RELOAD -->
+
+    <script>
+      (function () {
+        const path = window.location.pathname;
+        const style = document.createElement('style');
+        if (path.includes('_en')) {
+          style.innerHTML = '.button_en { display: none !important; }';
+        } else {
+          style.innerHTML = '.button_sk { display: none !important; }';
+        }
+        document.head.appendChild(style);
+      })();
+    </script>
+
+    <title>Metoda Cesta EN</title>
   </head>
   <body>
     <!-- MENU -->
@@ -31,7 +92,7 @@
         <i class="fa-solid fa-bars"></i>
       </div>
 
-      <img class="menu-logo" src="images/logo.png" alt="hero" />
+      <img class="menu-logo site-logo" src="images/logo.png" alt="hero" />
 
       <button
         class="button button-language button_en"

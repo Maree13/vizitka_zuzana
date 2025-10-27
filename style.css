@@ -22,7 +22,14 @@ body {
   background-color: var(--white);
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
+  /* opacity: 0; */
+  /* transition: opacity 0.25s ease-in; */
 }
+
+
+/* body.loaded {
+  opacity: 1;
+} */
 
 /* HEADER */
 header {
@@ -85,6 +92,7 @@ a {
   border: none;
   background-color: transparent;
   font-size: 36px;
+  transition: opacity 0.3s ease;
 }
 
 /* HAMBURGER MENU ICON */
