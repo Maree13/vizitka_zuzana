@@ -276,6 +276,7 @@ h2 {
 
   .button {
     opacity: 70%;
+    color: var(--black-licorice);
   }
 
 
