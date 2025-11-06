@@ -255,10 +255,10 @@ h2 {
   }
 
   .menu-logo {
-    width: 55px;
-    height: 55px;
+    width: 150px;
+    height: 150px;
     margin: 0;
-    margin-left: 15px;
+    /* margin-left: 15px; */
   }
 
   /* test */
