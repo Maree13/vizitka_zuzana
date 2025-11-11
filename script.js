@@ -37,3 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// 🔹 ZMENA LOGA PODĽA JAZYKA
+const logo = document.querySelector('.site-logo');
+if (currentFile.includes('_en')) {
+  logo.src = 'images/logo_en.png';
+} else {
+  logo.src = 'images/logo.png';
+}
