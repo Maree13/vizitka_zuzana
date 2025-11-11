@@ -245,7 +245,7 @@ h2 {
     background-color: whitesmoke;
     width: 100%;
     margin-top: 80px;
-    border: solid;
+    /* border: solid; */
   }
 
   .nav-list li:last-child {
