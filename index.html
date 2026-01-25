@@ -19,6 +19,15 @@
     <!-- vlož do <head> na úplne začiatok -->
     <link rel="preload" as="image" href="images/logo_sk.png" />
     <link rel="preload" as="image" href="images/logo_en.png" />
+    <script>
+      function changeLanguage(lang) {
+        if (lang === 'en') {
+          window.location.href = 'metodacesta_en.html';
+        } else {
+          window.location.href = 'index.html';
+        }
+      }
+    </script>
 
     <script>
       (function () {
