@@ -149,8 +149,10 @@ a {
 
 /* SEKCE */
 
-p {
+p,
+.paragraph {
   margin: 50px;
+  text-align: center;
   text-align: center;
 }
 
@@ -160,6 +162,12 @@ h2 {
   margin-top: 50px;
   color: var(--darkred);
   letter-spacing: 3px;
+}
+
+.aboutthemethod-list {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ABOUT ME */
@@ -175,6 +183,7 @@ h2 {
 
 .aboutme-image_wrapper {
   text-align: center;
+  margin-top: 30px;
 }
 
 .aboutme-image {
@@ -192,6 +201,34 @@ h2 {
   width: 2rem;
   height: 2rem;
 }
+
+/* ABOUT THE METHOD */
+
+.aboutthemethod-list {
+  list-style: none;
+  max-width: 70%;
+  margin: 0 auto 40px;
+  padding: 0;
+}
+
+.aboutthemethod-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 1.2rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.aboutthemethod-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 1.4rem;
+  color: var(--darkred);
+  /* alebo jemná ružová */
+}
+
 
 /* /////////////////////////////////// */
 
