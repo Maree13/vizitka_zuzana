@@ -54,7 +54,7 @@ nav {
   align-items: center;
   margin: 15px 30px;
   font-family: "Pacifico", cursive;
-  font-size: 24px;
+  font-size: 20px;
   z-index: 1;
   width: 90%;
 }
@@ -71,6 +71,7 @@ a {
   text-decoration: none;
   list-style-type: none;
   color: var(--black-licorice);
+  margin-right: 10px;
 }
 
 /* BUTTON  */
@@ -232,8 +233,8 @@ h2 {
 
 /* /////////////////////////////////// */
 
-/* SMALL SCREENS */
-@media (max-width: 850px) {
+/* SMALL AND MIDDLE SCREENS */
+@media (max-width: 1050px) {
 
   header {
     /* display: flex;
