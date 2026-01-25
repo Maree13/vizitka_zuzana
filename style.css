@@ -202,16 +202,16 @@ h2 {
   height: 2rem;
 }
 
-/* ABOUT THE METHOD */
+/* MY OFFER */
 
-.aboutthemethod-list {
+.myoffer-list {
   list-style: none;
   max-width: 70%;
   margin: 0 auto 40px;
   padding: 0;
 }
 
-.aboutthemethod-list li {
+.myoffer-list li {
   position: relative;
   padding-left: 1.8rem;
   margin-bottom: 1.2rem;
@@ -219,7 +219,7 @@ h2 {
   line-height: 1.6;
 }
 
-.aboutthemethod-list li::before {
+.myoffer-list li::before {
   content: "•";
   position: absolute;
   left: 0;
