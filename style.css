@@ -66,10 +66,8 @@ nav {
   width: 70%;
 }
 
-/* li,
-a { */
 li,
-.nav-list-a {
+a {
   text-decoration: none;
   list-style-type: none;
   color: var(--black-licorice);
