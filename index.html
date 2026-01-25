@@ -20,7 +20,7 @@
     <link rel="preload" as="image" href="images/logo_sk.png" />
     <link rel="preload" as="image" href="images/logo_en.png" />
 
-    <script>
+    <!-- <script>
       (function () {
         // 1) Predbežné vloženie CSS, ktoré skryje správne tlačidlo a logo (okamžite)
         const path = window.location.pathname;
@@ -57,6 +57,33 @@
             // ak prišlo z bfcache, DOMContentLoaded možno nepadol -> okamžite zobrazíme
             showPage();
           }
+        });
+      })();
+    </script> -->
+    <!-- JS pre jazykové tlačidlá a logo -->
+    <script>
+      (function () {
+        const path = window.location.pathname.toLowerCase();
+        const logo = document.querySelector('.site-logo');
+        const hideClass = path.includes('en') ? '.button_en' : '.button_sk';
+
+        // skryjeme nevhodné tlačidlo
+        const style = document.createElement('style');
+        style.innerHTML = `${hideClass} { display: none !important; }`;
+        document.head.appendChild(style);
+
+        // zobraz logo a stránku
+        function showPage() {
+          document.documentElement.style.visibility = 'visible';
+          if (logo) logo.style.visibility = 'visible';
+        }
+
+        // čakáme na DOM
+        document.addEventListener('DOMContentLoaded', showPage);
+
+        // ošetrenie bfcache (back/forward)
+        window.addEventListener('pageshow', function (ev) {
+          if (ev.persisted) showPage();
         });
       })();
     </script>
@@ -98,14 +125,13 @@
   <body>
     <!-- MENU -->
     <header>
-      <!-- HAMBURGER MENU ICON -->
+      <!-- Hamburger pre malé obrazovky -->
+      <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
 
-      <div class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+      <!-- Logo -->
+      <img class="menu-logo site-logo" src="images/logo_en.png" alt="Logo" />
 
-      <img class="menu-logo site-log" src="images/logo.png" alt="hero" />
-
+      <!-- Jazykové tlačidlá -->
       <button
         class="button button-language button_en"
         onclick="changeLanguage('en')"
@@ -119,50 +145,14 @@
         SK
       </button>
 
+      <!-- Menu -->
       <nav class="nav" id="navbar">
         <ul class="nav-list">
-          <li>
-            <a href="#aboutme">O mne</a>
-          </li>
-          <li>
-            <a href="#abouttherapy">O metode Cesta</a>
-          </li>
-          <li>
-            <a href="#myoffer">Čo ponúkam</a>
-          </li>
-          <li>
-            <a href="#contact">Kontakt</a>
-          </li>
+          <li><a href="#aboutme">O mne</a></li>
+          <li><a href="#abouttherapy">O metode Cesta</a></li>
+          <li><a href="#myoffer">Čo ponúkam</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
-
-        <!-- <button class="button button-language">En</button> -->
-
-        <div>
-          <!-- <button
-            class="button button-language button_en"
-            onclick="changeLanguage('en')"
-          >
-            EN
-          </button>
-          <button
-            class="button button-language button_sk"
-            onclick="changeLanguage('sk')"
-          >
-            SK
-          </button> -->
-          <!-- <button
-            class="button button-language button_sk"
-            onclick="changeLanguage('cz')"
-          >
-            CZ
-          </button> -->
-
-          <!-- <button onclick="changeLanguage('cz')">CZ</button> -->
-        </div>
-
-        <!-- <div class="icon-container_hamburger">
-          <img class="icon-image_hamburger" src="icons/menu_icon.png" />
-        </div> -->
       </nav>
     </header>
 
