@@ -97,6 +97,7 @@ a {
   background-color: transparent;
   font-size: 36px;
   transition: opacity 0.3s ease;
+  z-index: 2;
 }
 
 /* HAMBURGER MENU ICON */
