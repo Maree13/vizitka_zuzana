@@ -5,9 +5,16 @@ function changeLanguage(lang) {
   if (lang === 'sk') {
     window.location.href = 'index.html';
   } else if (lang === 'en') {
-    window.location.href = 'metodacesta_en.html';
+    window.location.href = 'en.html'; // zmena z metodacesta_en.html
   }
 }
+// function changeLanguage(lang) {
+//   if (lang === 'sk') {
+//     window.location.href = 'index.html';
+//   } else if (lang === 'en') {
+//     window.location.href = 'metodacesta_en.html';
+//   }
+// }
 
 // Po načítaní stránky
 document.addEventListener('DOMContentLoaded', () => {

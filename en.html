@@ -8,8 +8,17 @@
     <!-- vlož do <head> na úplne začiatok -->
     <link rel="preload" as="image" href="images/logo_sk.png" />
     <link rel="preload" as="image" href="images/logo_en.png" />
-
     <script>
+      function changeLanguage(lang) {
+        if (lang === 'en') {
+          window.location.href = 'en.html';
+        } else {
+          window.location.href = 'index.html';
+        }
+      }
+    </script>
+
+    <!-- <script>
       function changeLanguage(lang) {
         if (lang === 'en') {
           window.location.href = 'metodacesta_en.html';
@@ -17,7 +26,7 @@
           window.location.href = 'index.html';
         }
       }
-    </script>
+    </script> -->
 
     <script>
       (function () {
@@ -25,7 +34,8 @@
         const path = window.location.pathname;
         const css = document.createElement('style');
         // skryjeme aktuálne tlačidlo (podľa názvu triedy)
-        if (path.includes('_en')) {
+        if (path.includes('en.html')) {
+          // zmena z '_en'
           css.innerHTML =
             '.button_en { display: none !important; } .site-logo { visibility: hidden; }';
         } else {
@@ -82,7 +92,8 @@
       (function () {
         const path = window.location.pathname;
         const style = document.createElement('style');
-        if (path.includes('_en')) {
+        if (path.includes('en.html')) {
+          // zmena z '_en'
           style.innerHTML = '.button_en { display: none !important; }';
         } else {
           style.innerHTML = '.button_sk { display: none !important; }';
