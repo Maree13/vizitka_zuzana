@@ -241,6 +241,26 @@ h2 {
   text-align: center;
 }
 
+/* 404 ERROR PAGE */
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-page h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.error-page p {
+  margin-bottom: 2rem;
+}
+
 
 /* /////////////////////////////////// */
 
