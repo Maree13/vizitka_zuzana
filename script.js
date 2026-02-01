@@ -46,3 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+// LOGO
+
+// document
+//   .getElementById('language-button')
+//   .addEventListener('click', function () {
+//     var logo = document.getElementById('logo');
+//     var currentPage = window.location.pathname;
+
+//     if (currentPage.includes('en.html')) {
+//       logo.src = 'images/logo_en_.png';
+//     } else {
+//       logo.src = 'images/logo.png'; // slovenské logo
+//     }
+//   });
