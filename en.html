@@ -6,7 +6,7 @@
 
     <!-- loading loga -->
     <!-- vlož do <head> na úplne začiatok -->
-    <link rel="preload" as="image" href="images/logo_sk.png" />
+    <link rel="preload" as="image" href="images/logo.png" />
     <link rel="preload" as="image" href="images/logo_en_.png" />
     <script>
       function changeLanguage(lang) {
@@ -93,11 +93,25 @@
         const path = window.location.pathname;
         const style = document.createElement('style');
         if (path.includes('en.html')) {
-          // zmena z '_en'
-          style.innerHTML = '.button_en { display: none !important; }';
+          css.innerHTML = '.button_en { display: none !important; }';
         } else {
-          style.innerHTML = '.button_sk { display: none !important; }';
+          css.innerHTML = '.button_sk { display: none !important; }';
         }
+        // skryjeme aktuálne tlačidlo (podľa názvu triedy)
+        // if (path.includes('en.html')) {
+        // zmena z '_en'
+        //  css.innerHTML =
+        //    '.button_en { display: none !important; } .site-logo { visibility: hidden; }';
+        // } else {
+        //  css.innerHTML =
+        //    '.button_sk { display: none !important; } .site-logo { visibility: hidden; }';
+        // }
+        // if (path.includes('en.html')) {
+        // zmena z '_en'
+        // style.innerHTML = '.button_en { display: none !important; }';
+        //} else {
+        // style.innerHTML = '.button_sk { display: none !important; }';
+        // }
         document.head.appendChild(style);
       })();
     </script>

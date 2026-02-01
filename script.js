@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 🔹 ZMENA LOGA
   const logo = document.querySelector('.site-logo');
   if (logo) {
-    if (currentFile.includes('_en')) {
-      logo.src = 'images/logo_en.png';
+    if (currentFile.includes('en.html')) {
+      logo.src = 'images/logo_en_.png';
     } else {
       logo.src = 'images/logo.png';
     }

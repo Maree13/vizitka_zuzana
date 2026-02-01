@@ -17,7 +17,7 @@
 
     <!-- loading loga -->
     <!-- vlož do <head> na úplne začiatok -->
-    <link rel="preload" as="image" href="images/logo_sk.png" />
+    <link rel="preload" as="image" href="images/logo.png" />
     <link rel="preload" as="image" href="images/logo_en_.png" />
     <script>
       function changeLanguage(lang) {
@@ -44,15 +44,20 @@
         // 1) Predbežné vloženie CSS, ktoré skryje správne tlačidlo a logo (okamžite)
         const path = window.location.pathname;
         const css = document.createElement('style');
-        // skryjeme aktuálne tlačidlo (podľa názvu triedy)
         if (path.includes('en.html')) {
-          // zmena z '_en'
-          css.innerHTML =
-            '.button_en { display: none !important; } .site-logo { visibility: hidden; }';
+          css.innerHTML = '.button_en { display: none !important; }';
         } else {
-          css.innerHTML =
-            '.button_sk { display: none !important; } .site-logo { visibility: hidden; }';
+          css.innerHTML = '.button_sk { display: none !important; }';
         }
+        // skryjeme aktuálne tlačidlo (podľa názvu triedy)
+        // if (path.includes('en.html')) {
+        // zmena z '_en'
+        //  css.innerHTML =
+        //    '.button_en { display: none !important; } .site-logo { visibility: hidden; }';
+        // } else {
+        //  css.innerHTML =
+        //    '.button_sk { display: none !important; } .site-logo { visibility: hidden; }';
+        // }
         document.head.appendChild(css);
 
         // 2) Funkcia ktorá "odomkne" stránku, keď je všetko pripravené
@@ -125,7 +130,7 @@
         <i class="fa-solid fa-bars"></i>
       </div>
 
-      <img class="menu-logo site-logo" src="images/logo_sk.png" alt="hero" />
+      <img class="menu-logo site-logo" src="images/logo.png" alt="hero" />
 
       <!-- <img class="menu-logo site-logo" src="images/logo.png" alt="hero" /> -->
 
