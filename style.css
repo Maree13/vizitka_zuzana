@@ -238,6 +238,7 @@ h2 {
   background-color: var(--black-licorice);
   font-size: 14px;
   padding: 40px;
+  padding-bottom: 80px;
   text-align: center;
   display: flex;
   flex-direction: column;
