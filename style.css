@@ -231,10 +231,16 @@ h2 {
   /* alebo jemná ružová */
 }
 
+
+
 /* RECENZIE*/
 
 .recenzie {
   font-style: italic;
+}
+
+.symbol-heart {
+  font-style: normal;
 }
 
 
