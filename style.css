@@ -75,7 +75,8 @@ a {
   margin-right: 10px;
 }
 
-p {
+p,
+list {
   font-family: "Open Sans", sans-serif;
 }
 
