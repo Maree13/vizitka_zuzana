@@ -75,6 +75,10 @@ a {
   margin-right: 10px;
 }
 
+p {
+  font-family: "Source Sans 3", sans-serif;
+}
+
 /* BUTTON  */
 
 .button {
