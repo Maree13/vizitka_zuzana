@@ -80,6 +80,10 @@ p,
   font-family: "Open Sans", sans-serif;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* BUTTON  */
 
 .button {
@@ -217,6 +221,7 @@ h2 {
   max-width: 70%;
   margin: 0 auto 40px;
   padding: 0;
+  font-weight: bold;
 }
 
 .myoffer-list li {
