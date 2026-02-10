@@ -269,6 +269,7 @@ h2 {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 30px;
+  font-family: 'Inconsolata', monospace;
 }
 
 .fa-brands {
