@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en" style="visibility: hidden">
+<html lang="en">
+  <!-- <html lang="en" style="visibility: hidden"> -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,57 +9,42 @@
 
     <link rel="preload" as="image" href="images/logo.png" />
     <link rel="preload" as="image" href="images/logo_en_.png" />
-    <script>
+
+    <!-- <script>
       function changeLanguage(lang) {
         if (lang === 'en') {
           window.location.href = 'en.html';
+        } else if (lang === 'cz') {
+          window.location.href = 'cz.html';
         } else {
           window.location.href = 'index.html';
         }
       }
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
       (function () {
-        // 1) Predbežné vloženie CSS, ktoré skryje správne tlačidlo a logo (okamžite)
         const path = window.location.pathname;
         const css = document.createElement('style');
-        // skryjeme aktuálne tlačidlo (podľa názvu triedy)
         if (path.includes('en.html')) {
-          // zmena z '_en'
-          css.innerHTML =
-            '.button_en { display: none !important; } .site-logo { visibility: hidden; }';
+          css.innerHTML = '.button_en { display: none !important; }';
+        } else if (path.includes('cz.html')) {
+          css.innerHTML = '.button_cz { display: none !important; }';
         } else {
-          css.innerHTML =
-            '.button_sk { display: none !important; } .site-logo { visibility: hidden; }';
+          css.innerHTML = '.button_sk { display: none !important; }';
         }
         document.head.appendChild(css);
 
-        // 2) Funkcia ktorá "odomkne" stránku, keď je všetko pripravené
         function showPage() {
-          // odkomentuj ak chceš fade-in cez class; tu používame priame nastavenie
           document.documentElement.style.visibility = 'visible';
-          // zobraz logo (ak ho chceš len po tom co je pripravené)
-          const logo = document.querySelector('.site-logo');
-          if (logo) logo.style.visibility = 'visible';
         }
 
-        // 3) Počkame na DOMContentLoaded
-        document.addEventListener('DOMContentLoaded', function () {
-          // malá istota pre načítané obrázky/stylesheety
-          // ak potrebuješ čakať na obrázky, môžeš sem pridať kontrolu, napr. wait for logo complete
-          showPage();
-        });
-
-        // 4) Ošetrenie back/forward cache (pageshow) — dôležité pre "vracanie sa späť"
+        document.addEventListener('DOMContentLoaded', showPage);
         window.addEventListener('pageshow', function (ev) {
-          if (ev.persisted) {
-            // ak prišlo z bfcache, DOMContentLoaded možno nepadol -> okamžite zobrazíme
-            showPage();
-          }
+          if (ev.persisted) showPage();
         });
       })();
-    </script>
+    </script> -->
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -81,11 +67,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="style.css" />
-
     <!-- SCRIPT NA RELOAD -->
 
-    <script>
+    <!-- <script>
       (function () {
         const path = window.location.pathname;
         const style = document.createElement('style');
@@ -94,24 +78,24 @@
         } else {
           css.innerHTML = '.button_sk { display: none !important; }';
         }
-        // skryjeme aktuálne tlačidlo (podľa názvu triedy)
-        // if (path.includes('en.html')) {
-        // zmena z '_en'
-        //  css.innerHTML =
-        //    '.button_en { display: none !important; } .site-logo { visibility: hidden; }';
-        // } else {
-        //  css.innerHTML =
-        //    '.button_sk { display: none !important; } .site-logo { visibility: hidden; }';
-        // }
-        // if (path.includes('en.html')) {
-        // zmena z '_en'
-        // style.innerHTML = '.button_en { display: none !important; }';
-        //} else {
-        // style.innerHTML = '.button_sk { display: none !important; }';
-        // }
+
         document.head.appendChild(style);
       })();
-    </script>
+    </script> -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+      }
+      html.loaded {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
 
     <title>With Love on Earth | The Journey Method</title>
   </head>
@@ -126,7 +110,7 @@
 
       <img class="menu-logo site-logo" src="images/logo_en_.png" alt="hero" />
 
-      <button
+      <!-- <button
         class="button button-language button_en"
         onclick="changeLanguage('en')"
       >
@@ -137,6 +121,25 @@
         onclick="changeLanguage('sk')"
       >
         SK
+      </button> -->
+
+      <button
+        class="button button-language button_sk"
+        onclick="changeLanguage('sk')"
+      >
+        SK
+      </button>
+      <button
+        class="button button-language button_en"
+        onclick="changeLanguage('en')"
+      >
+        EN
+      </button>
+      <button
+        class="button button-language button_cz"
+        onclick="changeLanguage('cz')"
+      >
+        CZ
       </button>
 
       <nav class="nav" id="navbar">
@@ -602,7 +605,7 @@
 
     <section class="contact_section" id="contact">
       <div class="contact_wrapper">
-        <h2 class="contact_title">Contakt</h2>
+        <h2 class="contact_title">Contact</h2>
         <div class="contact-text_wrapper">
           <p class="contact-item">
             <a href="mailto:slaskounazemi@gmail.com">slaskounazemi@gmail.com</a>
@@ -667,36 +670,10 @@
     </div>
 
     <!-- Cookie banner JS -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const banner = document.getElementById('cookie-banner');
-        const acceptBtn = document.getElementById('accept-cookies');
-        const message = document.getElementById('cookie-message');
-        const lang = document.documentElement.lang; // "sk" alebo "en"
-
-        // nastavíme text podľa jazyka
-        if (lang === 'en') {
-          message.textContent =
-            'This site uses cookies to improve your experience.';
-          acceptBtn.textContent = 'Accept';
-        } else {
-          message.textContent =
-            'Táto stránka používa cookies pre lepší zážitok.';
-          acceptBtn.textContent = 'Súhlasím';
-        }
-
-        // skontrolujeme, či už súhlas existuje
-        if (!localStorage.getItem('cookiesAccepted')) {
-          banner.style.display = 'block';
-        }
-
-        acceptBtn.addEventListener('click', () => {
-          localStorage.setItem('cookiesAccepted', 'true');
-          banner.style.display = 'none';
-        });
-      });
-    </script>
 
     <script src="script.js"></script>
+    <script>
+      document.documentElement.classList.add('loaded');
+    </script>
   </body>
 </html>

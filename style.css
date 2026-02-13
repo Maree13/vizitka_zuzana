@@ -110,6 +110,10 @@ p,
   z-index: 2;
 }
 
+.button_cz {
+  display: none !important;
+}
+
 /* HAMBURGER MENU ICON */
 
 
