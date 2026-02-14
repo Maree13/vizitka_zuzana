@@ -22,15 +22,9 @@ body {
   background-color: var(--white);
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
-  /* opacity: 0; */
-  /* transition: opacity 0.25s ease-in; */
-  /* font-family: "Source Sans 3", sans-serif; */
 }
 
 
-/* body.loaded {
-  opacity: 1;
-} */
 
 /* HEADER */
 header {
@@ -40,9 +34,6 @@ header {
 }
 
 .menu-logo {
-  /* width: 90px;
-  height: 90px;
-  margin: 30px; */
   width: 150px;
   height: 150px;
   margin: 15px;
@@ -353,11 +344,11 @@ h2 {
   }
 
   header {
-    /* display: flex;
-    justify-content: space-between; */
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    position: relative;
+    /* Potrebné pre absolute positioning */
   }
 
 
@@ -389,11 +380,11 @@ h2 {
     display: block;
     font-size: 20px;
     cursor: pointer;
-    /* margin: 15px 30px; */
-    margin: 40px;
     z-index: 1;
-    margin: 0px;
-    /* order: 3; */
+    order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .nav-list {
@@ -421,10 +412,18 @@ h2 {
     height: 150px;
     margin: 0;
     /* margin-left: 15px; */
+    order: 1;
   }
 
   .button-language {
     font-size: 20px;
+  }
+
+  .menu-language-container {
+    order: 3;
+    /* Jazyky vpravo */
+    display: flex;
+    gap: 5px;
   }
 
   /* test */
