@@ -75,6 +75,8 @@ a {
   margin-right: 10px;
 }
 
+
+
 p,
 .list {
   font-family: "Open Sans", sans-serif;
@@ -90,22 +92,22 @@ p,
   cursor: pointer;
 }
 
-/* BUTTON LANGUAGE */
+
 
 /* BUTTON LANGUAGE */
 .button-language {
-  width: 70px;
-  height: 70px;
+  /* width: 25px;
+  height: 25px; */
   border-radius: 50%;
   font-family: "Reenie Beanie", cursive;
-  padding: 20px;
+  padding: 10px;
   letter-spacing: 2px;
   text-align: center;
-  margin: 50px;
+  /* margin: 30px; */
   order: 2;
   border: none;
   background-color: transparent;
-  font-size: 36px;
+  font-size: 24px;
   transition: all 0.3s ease;
   z-index: 2;
   opacity: 0.5;
@@ -119,38 +121,26 @@ p,
   transform: scale(1.1);
 }
 
+.menu-language-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 40%;
+
+
+}
+
 /* AKTÍVNY JAZYK - zvýraznený */
 .button-language.active {
   opacity: 1;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 42px;
-  color: var(--darkred);
+  color: var(--black-licorice);
   /* alebo akákoľvek farba ktorú chceš */
   transform: scale(1.1);
 }
 
-/* VYMAŽ TIETO RIADKY AK SÚ TAM: */
-/* .button_sk { display: none !important; } */
-/* .button_en { display: none !important; } */
-/* .button_cz { display: none !important; } */
 
-/* .button-language {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  font-family: "Reenie Beanie", cursive;
-
-  padding: 20px;
-  letter-spacing: 2px;
-  text-align: center;
-  margin: 50px;
-  order: 2;
-  border: none;
-  background-color: transparent;
-  font-size: 36px;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-} */
 
 
 
@@ -403,7 +393,7 @@ h2 {
     margin: 40px;
     z-index: 1;
     margin: 0px;
-    order: 1;
+    /* order: 3; */
   }
 
   .nav-list {
@@ -433,6 +423,10 @@ h2 {
     /* margin-left: 15px; */
   }
 
+  .button-language {
+    font-size: 20px;
+  }
+
   /* test */
 
   /* HERO */
@@ -454,14 +448,6 @@ h2 {
     color: var(--black-licorice);
   }
 
-  /* 
-  .button-language {
-    margin: 0;
-    font-size: 40px;
-    padding: 0px;
-    border: none;
-    background-color: transparent;
-  } */
 
   .aboutme-image {
     max-height: 175px;
