@@ -338,6 +338,13 @@ h2 {
 /* /////////////////////////////////// */
 
 /* SMALL AND MIDDLE SCREENS */
+
+@media (min-width: 1051px) and (max-width: 1240px) {
+  nav {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 1050px) {
   body {
     font-size: 16px;
