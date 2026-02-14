@@ -92,12 +92,54 @@ p,
 
 /* BUTTON LANGUAGE */
 
+/* BUTTON LANGUAGE */
 .button-language {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   font-family: "Reenie Beanie", cursive;
-  /* font-size: 24px; */
+  padding: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 50px;
+  order: 2;
+  border: none;
+  background-color: transparent;
+  font-size: 36px;
+  transition: all 0.3s ease;
+  z-index: 2;
+  opacity: 0.5;
+  /* Neaktívne sú svetlejšie */
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.button-language:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* AKTÍVNY JAZYK - zvýraznený */
+.button-language.active {
+  opacity: 1;
+  font-weight: bold;
+  font-size: 42px;
+  color: var(--darkred);
+  /* alebo akákoľvek farba ktorú chceš */
+  transform: scale(1.1);
+}
+
+/* VYMAŽ TIETO RIADKY AK SÚ TAM: */
+/* .button_sk { display: none !important; } */
+/* .button_en { display: none !important; } */
+/* .button_cz { display: none !important; } */
+
+/* .button-language {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-family: "Reenie Beanie", cursive;
+
   padding: 20px;
   letter-spacing: 2px;
   text-align: center;
@@ -108,11 +150,9 @@ p,
   font-size: 36px;
   transition: opacity 0.3s ease;
   z-index: 2;
-}
+} */
 
-.button_cz {
-  display: none !important;
-}
+
 
 /* HAMBURGER MENU ICON */
 
@@ -414,14 +454,14 @@ h2 {
     color: var(--black-licorice);
   }
 
-
+  /* 
   .button-language {
     margin: 0;
     font-size: 40px;
     padding: 0px;
     border: none;
     background-color: transparent;
-  }
+  } */
 
   .aboutme-image {
     max-height: 175px;

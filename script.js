@@ -64,10 +64,46 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 3. Skry aktuálne jazykové tlačidlo
+  // if (config) {
+  //   const currentButton = document.querySelector(`.${config.buttonClass}`);
+  //   if (currentButton) {
+  //     currentButton.style.display = 'none';
+  //   }
+  // }
+
+  // 3. Skry aktuálne jazykové tlačidlo
+  // if (config) {
+  //   const currentButton = document.querySelector(`.${config.buttonClass}`);
+  //   if (currentButton) {
+  //     currentButton.style.display = 'none';
+  //   }
+  // }
+
+  // 3. Zvýrazni aktuálne jazykové tlačidlo
   if (config) {
+    // Odstráň active class zo všetkých tlačidiel
+    document.querySelectorAll('.button-language').forEach((btn) => {
+      btn.classList.remove('active');
+    });
+
+    // Pridaj active class aktuálnemu tlačidlu
     const currentButton = document.querySelector(`.${config.buttonClass}`);
     if (currentButton) {
-      currentButton.style.display = 'none';
+      currentButton.classList.add('active');
+    }
+  }
+
+  // 3. Zvýrazni aktuálne jazykové tlačidlo
+  if (config) {
+    // Odstráň active class zo všetkých tlačidiel
+    document.querySelectorAll('.button-language').forEach((btn) => {
+      btn.classList.remove('active');
+    });
+
+    // Pridaj active class aktuálnemu tlačidlu
+    const currentButton = document.querySelector(`.${config.buttonClass}`);
+    if (currentButton) {
+      currentButton.classList.add('active');
     }
   }
 

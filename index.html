@@ -26,52 +26,6 @@
     <!-- vlož do <head> na úplne začiatok -->
     <link rel="preload" as="image" href="images/logo.png" />
     <link rel="preload" as="image" href="images/logo_en_.png" />
-    <!-- <script>
-      function changeLanguage(lang) {
-        if (lang === 'en') {
-          window.location.href = 'en.html';
-        } else if (lang === 'cz') {
-          window.location.href = 'cz.html';
-        } else {
-          window.location.href = 'index.html';
-        }
-      }
-    </script> -->
-
-    <!-- <script>
-      (function () {
-        (function () {
-          const path = window.location.pathname;
-          const css = document.createElement('style');
-          if (path.includes('en.html')) {
-            css.innerHTML = '.button_en { display: none !important; }';
-          } else if (path.includes('cz.html')) {
-            css.innerHTML = '.button_cz { display: none !important; }';
-          } else {
-            css.innerHTML = '.button_sk { display: none !important; }';
-          }
-        })();
-
-        document.head.appendChild(css);
-
-        function showPage() {
-          document.documentElement.style.visibility = 'visible';
-
-          const logo = document.querySelector('.site-logo');
-          if (logo) logo.style.visibility = 'visible';
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-          showPage();
-        });
-
-        window.addEventListener('pageshow', function (ev) {
-          if (ev.persisted) {
-            showPage();
-          }
-        });
-      })();
-    </script> -->
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -102,22 +56,6 @@
 
     <link rel="stylesheet" href="style.css" /> -->
 
-    <!-- SCRIPT NA RELOAD -->
-
-    <!-- <script>
-      (function () {
-        const path = window.location.pathname;
-        const style = document.createElement('style');
-        if (path.includes('en.html')) {
-          // zmena z '_en'
-          style.innerHTML = '.button_en { display: none !important; }';
-        } else {
-          style.innerHTML = '.button_sk { display: none !important; }';
-        }
-        document.head.appendChild(style);
-      })();
-    </script> -->
-
     <link rel="stylesheet" href="style.css" />
 
     <title>S Láskou Na Zemi | Metóda Cesta</title>
@@ -141,23 +79,6 @@
         opacity: 1;
       }
     </style>
-
-    <script>
-      (function () {
-        const path = window.location.pathname;
-        const css = document.createElement('style');
-
-        if (path.includes('en.html')) {
-          css.innerHTML = '.button_en { display: none !important; }';
-        } else if (path.includes('cz.html')) {
-          css.innerHTML = '.button_cz { display: none !important; }';
-        } else {
-          css.innerHTML = '.button_sk { display: none !important; }';
-        }
-
-        document.head.appendChild(css);
-      })();
-    </script>
   </head>
 
   <body>
@@ -171,20 +92,6 @@
 
       <img class="menu-logo site-logo" src="images/logo.png" alt="hero" />
 
-      <!-- <img class="menu-logo site-logo" src="images/logo.png" alt="hero" /> -->
-      <!-- 
-      <button
-        class="button button-language button_en"
-        onclick="changeLanguage('en')"
-      >
-        EN
-      </button>
-      <button
-        class="button button-language button_sk"
-        onclick="changeLanguage('sk')"
-      >
-        SK
-      </button> -->
       <button
         class="button button-language button_sk"
         onclick="changeLanguage('sk')"

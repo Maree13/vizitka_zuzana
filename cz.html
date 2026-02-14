@@ -66,24 +66,6 @@
         opacity: 1;
       }
     </style>
-
-    <!-- Skry správne tlačidlo -->
-    <script>
-      (function () {
-        const path = window.location.pathname;
-        const css = document.createElement('style');
-
-        if (path.includes('en.html')) {
-          css.innerHTML = '.button_en { display: none !important; }';
-        } else if (path.includes('cz.html')) {
-          css.innerHTML = '.button_cz { display: none !important; }';
-        } else {
-          css.innerHTML = '.button_sk { display: none !important; }';
-        }
-
-        document.head.appendChild(css);
-      })();
-    </script>
   </head>
 
   <body>
