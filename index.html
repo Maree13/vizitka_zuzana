@@ -8,6 +8,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta
       name="description"
       content="V Laske na Zemi - Metóda Brandon Bays, známá jako «Cesta», je transformační metóda pro léčení emočních a fyzických problémů na buněčné úrovni, která vychází z osobní zkušenosti autorky. Metóda vede k odkrytí vnitřní celistvosti a pomáhá zbavit se emoční zátěže skrze uvolnění potlačených vzpomínek, strachů a omezujících přesvědčení. Terapie má pomoci k vnitřní svobodě, radosti a řešení problémů, jako jsou fobie, úzkosti, chronické bolesti nebo nízké sebevědomí."
     />
@@ -135,6 +141,23 @@
         opacity: 1;
       }
     </style>
+
+    <script>
+      (function () {
+        const path = window.location.pathname;
+        const css = document.createElement('style');
+
+        if (path.includes('en.html')) {
+          css.innerHTML = '.button_en { display: none !important; }';
+        } else if (path.includes('cz.html')) {
+          css.innerHTML = '.button_cz { display: none !important; }';
+        } else {
+          css.innerHTML = '.button_sk { display: none !important; }';
+        }
+
+        document.head.appendChild(css);
+      })();
+    </script>
   </head>
 
   <body>
@@ -742,8 +765,5 @@
     </script> -->
 
     <script src="script.js"></script>
-    <script>
-      document.documentElement.classList.add('loaded');
-    </script>
   </body>
 </html>

@@ -7,6 +7,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta
       name="description"
       content="V Laske na Zemi - Metóda Brandon Bays, známá jako «Cesta», je transformační metóda pro léčení emočních a fyzických problémů na buněčné úrovni, která vychází z osobní zkušenosti autorky. Metóda vede k odkrytí vnitřní celistvosti a pomáhá zbavit se emoční zátěže skrze uvolnění potlačených vzpomínek, strachů a omezujících přesvědčení. Terapie má pomoci k vnitřní svobodě, radosti a řešení problémů, jako jsou fobie, úzkosti, chronické bolesti nebo nízké sebevědomí."
@@ -20,48 +27,6 @@
     <!-- vlož do <head> na úplne začiatok -->
     <link rel="preload" as="image" href="images/logo.png" />
     <link rel="preload" as="image" href="images/logo_en_.png" />
-    <!-- <script>
-      function changeLanguage(lang) {
-        if (lang === 'en') {
-          window.location.href = 'en.html';
-        } else if (lang === 'cz') {
-          window.location.href = 'cz.html';
-        } else {
-          window.location.href = 'index.html';
-        }
-      }
-    </script> -->
-
-    <!-- <script>
-      (function () {
-        const path = window.location.pathname;
-        const css = document.createElement('style');
-        if (path.includes('en.html')) {
-          css.innerHTML = '.button_en { display: none !important; }';
-        } else {
-          css.innerHTML = '.button_sk { display: none !important; }';
-        }
-
-        document.head.appendChild(css);
-
-        function showPage() {
-          document.documentElement.style.visibility = 'visible';
-
-          const logo = document.querySelector('.site-logo');
-          if (logo) logo.style.visibility = 'visible';
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-          showPage();
-        });
-
-        window.addEventListener('pageshow', function (ev) {
-          if (ev.persisted) {
-            showPage();
-          }
-        });
-      })();
-    </script> -->
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -79,31 +44,17 @@
     />
 
     <!-- FONTAWESOME LINK -->
-    <!-- <script
+    <script
       src="https://kit.fontawesome.com/9750681d4d.js"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- SCRIPT NA RELOAD -->
+    <title>S Láskou Na Zemi | Metoda Cesta</title>
 
-    <!-- <script>
-      (function () {
-        const path = window.location.pathname;
-        const style = document.createElement('style');
-        if (path.includes('en.html')) {
-          style.innerHTML = '.button_en { display: none !important; }';
-        } else {
-          style.innerHTML = '.button_sk { display: none !important; }';
-        }
-        document.head.appendChild(style);
-      })();
-    </script> -->
-
-    <link rel="stylesheet" href="style.css" />
-    <title>S Láskou Na Zemi | Metóda Cesta</title>
-
+    <!-- Plynulý loading -->
     <style>
       html {
         visibility: hidden;
@@ -116,9 +67,23 @@
       }
     </style>
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- Skry správne tlačidlo -->
+    <script>
+      (function () {
+        const path = window.location.pathname;
+        const css = document.createElement('style');
 
-    <title>S Láskou Na Zemi | Metóda Cesta</title>
+        if (path.includes('en.html')) {
+          css.innerHTML = '.button_en { display: none !important; }';
+        } else if (path.includes('cz.html')) {
+          css.innerHTML = '.button_cz { display: none !important; }';
+        } else {
+          css.innerHTML = '.button_sk { display: none !important; }';
+        }
+
+        document.head.appendChild(css);
+      })();
+    </script>
   </head>
 
   <body>
@@ -706,8 +671,5 @@
     <!-- Cookie banner JS -->
 
     <script src="script.js"></script>
-    <script>
-      document.documentElement.classList.add('loaded');
-    </script>
   </body>
 </html>

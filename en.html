@@ -4,6 +4,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
     <!-- loading loga -->
 
@@ -98,7 +105,24 @@
     </style>
 
     <title>With Love on Earth | The Journey Method</title>
+    <script>
+      (function () {
+        const path = window.location.pathname;
+        const css = document.createElement('style');
+
+        if (path.includes('en.html')) {
+          css.innerHTML = '.button_en { display: none !important; }';
+        } else if (path.includes('cz.html')) {
+          css.innerHTML = '.button_cz { display: none !important; }';
+        } else {
+          css.innerHTML = '.button_sk { display: none !important; }';
+        }
+
+        document.head.appendChild(css);
+      })();
+    </script>
   </head>
+
   <body>
     <!-- MENU -->
     <header>
@@ -672,8 +696,5 @@
     <!-- Cookie banner JS -->
 
     <script src="script.js"></script>
-    <script>
-      document.documentElement.classList.add('loaded');
-    </script>
   </body>
 </html>

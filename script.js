@@ -37,7 +37,9 @@ function getCurrentLanguage() {
 function changeLanguage(lang) {
   const config = LANGUAGE_CONFIG[lang];
   if (config) {
-    window.location.href = config.file;
+    // Force reload - zabráni cache problémom
+    // Pridá timestamp aby browser načítal stránku znova
+    window.location.replace(config.file + '?v=' + Date.now());
   }
 }
 
@@ -48,8 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentLang = getCurrentLanguage();
   const config = LANGUAGE_CONFIG[currentLang];
 
-  // 1. Pridaj loaded class pre fade-in efekt (na HTML element!)
-  document.documentElement.classList.add('loaded');
+  // 1. Vyčisti a pridaj loaded class (na HTML element!)
+  document.documentElement.classList.remove('loaded');
+  setTimeout(() => {
+    document.documentElement.classList.add('loaded');
+  }, 10);
 
   // 2. Nastav správne logo
   const logo = document.querySelector('.site-logo');
@@ -103,10 +108,21 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============================================
 window.addEventListener('pageshow', (event) => {
   if (event.persisted) {
-    // Stránka prišla z cache
+    // Stránka prišla z bfcache - resetuj a znovu zobraz
     document.documentElement.style.visibility = 'visible';
-    const logo = document.querySelector('.site-logo');
-    if (logo) logo.style.visibility = 'visible';
+    document.documentElement.classList.remove('loaded');
+    setTimeout(() => {
+      document.documentElement.classList.add('loaded');
+
+      // Reinicializuj logo
+      const currentLang = getCurrentLanguage();
+      const config = LANGUAGE_CONFIG[currentLang];
+      const logo = document.querySelector('.site-logo');
+      if (logo && config) {
+        logo.src = config.logo;
+        logo.style.visibility = 'visible';
+      }
+    }, 10);
   }
 });
 
@@ -157,9 +173,15 @@ function initCookieBanner(lang) {
 // ============================================
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    // Vynechaj externe linky a prázdne kotvy
+    const href = this.getAttribute('href');
+    if (!href || href === '#' || href.startsWith('http')) {
+      return;
+    }
+
+    const target = document.querySelector(href);
     if (target) {
+      e.preventDefault();
       target.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
