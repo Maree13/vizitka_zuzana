@@ -460,7 +460,7 @@ h2 {
   nav.show {
     display: flex;
     /* zobrazí sa po kliknutí */
-    /* margin-top: -20px; */
+    margin-top: -40px;
     /* border: solid black 4px; */
   }
 
