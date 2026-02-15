@@ -101,14 +101,11 @@ p,
 
 /* BUTTON LANGUAGE */
 .button-language {
-  /* width: 25px;
-  height: 25px; */
   border-radius: 50%;
   font-family: "Reenie Beanie", cursive;
   padding: 10px;
   letter-spacing: 2px;
   text-align: center;
-  /* margin: 30px; */
   order: 2;
   border: none;
   background-color: transparent;
@@ -513,6 +510,10 @@ h2 {
 
   .button-language {
     font-size: 18px;
+  }
+
+  .button-language.active {
+    font-size: 20px;
   }
 
   .menu-language-container {
