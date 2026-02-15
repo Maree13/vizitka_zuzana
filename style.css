@@ -128,8 +128,6 @@ p,
   flex-direction: row;
   justify-content: space-evenly;
   max-width: 40%;
-
-
 }
 
 /* AKTÍVNY JAZYK - zvýraznený */
@@ -520,7 +518,8 @@ h2 {
     order: 3;
     /* Jazyky vpravo */
     display: flex;
-    gap: 5px;
+    gap: 3px;
+    max-width: 30%;
   }
 
   /* test */
