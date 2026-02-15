@@ -22,6 +22,11 @@ body {
   background-color: var(--white);
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
+  background-color: var(--white);
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  padding-top: 180px;
+  /* výška headeru (150px logo + 30px padding) */
 }
 
 
@@ -31,6 +36,15 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white);
+  /* alebo akákoľvek farba */
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* voliteľný tieň */
 }
 
 .menu-logo {
@@ -330,6 +344,61 @@ h2 {
 
 .error-page p {
   margin-bottom: 2rem;
+}
+
+/* ============================================
+   SCROLL TO TOP BUTTON
+   ============================================ */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--darkred);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 999;
+
+  /* Skryté na začiatku */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+
+  /* Plynulá animácia */
+  transition: all 0.3s ease;
+
+  /* Tieň */
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
+}
+
+/* Keď sa má zobraziť */
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hover efekt */
+.scroll-to-top:hover {
+  background-color: var(--black-licorice);
+  transform: translateY(-5px);
+  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); */
+}
+
+/* Responzívne */
+@media (max-width: 1050px) {
+  .scroll-to-top {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 
