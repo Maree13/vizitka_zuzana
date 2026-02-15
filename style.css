@@ -408,6 +408,8 @@ h2 {
 
 /* SMALL AND MIDDLE SCREENS */
 
+/* /////////////////////////////////// */
+
 @media (min-width: 1136px) and (max-width: 1240px) {
   nav {
     font-size: 18px;
@@ -417,6 +419,7 @@ h2 {
 @media (max-width: 1135px) {
   body {
     font-size: 16px;
+    margin-top: 0;
   }
 
   header {
