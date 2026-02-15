@@ -520,6 +520,7 @@ h2 {
     display: flex;
     gap: 3px;
     max-width: 30%;
+    margin-left: 10px;
   }
 
   /* test */
