@@ -229,21 +229,46 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // ============================================
 // SCROLL TO TOP BUTTON
 // ============================================
-const scrollToTopBtn = document.getElementById('scroll-to-top');
+// const scrollToTopBtn = document.getElementById('scroll-to-top');
 
 // Zobraz tlačidlo po scrolle
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    scrollToTopBtn.classList.add('show');
-  } else {
-    scrollToTopBtn.classList.remove('show');
-  }
-});
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY > 300) {
+//     scrollToTopBtn.classList.add('show');
+//   } else {
+//     scrollToTopBtn.classList.remove('show');
+//   }
+// });
 
-// Kliknutie na tlačidlo
-scrollToTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
+// // Kliknutie na tlačidlo
+// scrollToTopBtn.addEventListener('click', () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth',
+//   });
+// });
+
+// ============================================
+// SCROLL TO TOP BUTTON
+// ============================================
+const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+// Kontrola či tlačidlo existuje
+if (scrollToTopBtn) {
+  // Zobraz tlačidlo po scrolle
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.classList.add('show');
+    } else {
+      scrollToTopBtn.classList.remove('show');
+    }
   });
-});
+
+  // Kliknutie na tlačidlo
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+}
