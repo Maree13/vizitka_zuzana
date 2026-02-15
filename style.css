@@ -547,4 +547,8 @@ h2 {
   .aboutme-image {
     max-height: 175px;
   }
+
+  .scroll-to-top {
+    bottom: 100px;
+  }
 }
