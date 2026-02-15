@@ -17,42 +17,6 @@
     <link rel="preload" as="image" href="images/logo.png" />
     <link rel="preload" as="image" href="images/logo_en_.png" />
 
-    <!-- <script>
-      function changeLanguage(lang) {
-        if (lang === 'en') {
-          window.location.href = 'en.html';
-        } else if (lang === 'cz') {
-          window.location.href = 'cz.html';
-        } else {
-          window.location.href = 'index.html';
-        }
-      }
-    </script> -->
-
-    <!-- <script>
-      (function () {
-        const path = window.location.pathname;
-        const css = document.createElement('style');
-        if (path.includes('en.html')) {
-          css.innerHTML = '.button_en { display: none !important; }';
-        } else if (path.includes('cz.html')) {
-          css.innerHTML = '.button_cz { display: none !important; }';
-        } else {
-          css.innerHTML = '.button_sk { display: none !important; }';
-        }
-        document.head.appendChild(css);
-
-        function showPage() {
-          document.documentElement.style.visibility = 'visible';
-        }
-
-        document.addEventListener('DOMContentLoaded', showPage);
-        window.addEventListener('pageshow', function (ev) {
-          if (ev.persisted) showPage();
-        });
-      })();
-    </script> -->
-
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -91,6 +55,10 @@
     <title>With Love on Earth | The Journey Method</title>
   </head>
 
+  <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
   <body>
     <!-- MENU -->
     <header>
@@ -101,19 +69,6 @@
       </div>
 
       <img class="menu-logo site-logo" src="images/logo_en_.png" alt="hero" />
-
-      <!-- <button
-        class="button button-language button_en"
-        onclick="changeLanguage('en')"
-      >
-        EN
-      </button>
-      <button
-        class="button button-language button_sk"
-        onclick="changeLanguage('sk')"
-      >
-        SK
-      </button> -->
 
       <nav class="nav" id="navbar">
         <ul class="nav-list">
@@ -507,22 +462,6 @@
       </p>
 
       <p>
-        &quot;I am a mother on maternity leave with two children, and after
-        several years of caring for my family, I’m finally starting to think
-        about myself. Before therapy, I was at the very beginning of a journey
-        toward self-awareness, recognizing my own needs, and admitting to
-        certain traumas from the past related to my mother. I had my doubts
-        because it isn’t easy to find time for oneself in an environment where
-        children are constantly present, which makes me extremely critical of
-        everything. Zuzka is a pleasant guide through the inner world with great
-        patience. Thanks to the projection and the journey we took together, I
-        became aware of my inner child, who still helps me today in difficult
-        moments by reminding me to be kind to myself. I would recommend this
-        therapy to anyone who wants to deepen their connection with their inner
-        consciousness. Having a guide helped me tremendously.&quot; Terezka
-      </p>
-
-      <p>
         &quot;I met Zuzka through my son, and I immediately felt that we
         clicked, and not just as mothers. When I felt stuck in certain life
         situations, I didn&#39;t hesitate to trust her and let her guide me
@@ -533,18 +472,6 @@
         patterns for how I want to live. Because of this, I was able to move
         forward in my life. I am very grateful for that. Thank you.&quot;
         Natálie
-      </p>
-
-      <p>
-        &quot;I completed several sessions with Zuzka. Everything was pleasant
-        and professional, and although we reached great depths, I felt I was in
-        good hands and in a safe space the entire time. &#39;The Journey&#39;
-        therapy is a great way to quickly get to the core of a problem—sometimes
-        one I didn&#39;t even know I had. Zuzka knows how to guide a person
-        kindly and directly to the origin, where things can be brought to
-        consciousness and settled. I definitely recommend her as a therapist to
-        those who want a guide on the path to a new way of being
-        <span class="symbol-heart">❤️</span>.&quot; Katka
       </p>
 
       <p>
