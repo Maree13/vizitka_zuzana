@@ -95,7 +95,7 @@ p,
 /* Odsadenie pre anchor linky kvôli fixnému headeru */
 section,
 #aboutme {
-  scroll-margin-top: 190px;
+  scroll-margin-top: 200px;
   /* výška headeru + trochu rezervy */
 }
 
