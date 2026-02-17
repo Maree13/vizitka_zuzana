@@ -124,6 +124,12 @@ section,
   /* Neaktívne sú svetlejšie */
   font-weight: normal;
   cursor: pointer;
+  color: var(--black-licorice) !important;
+  /* ← Čierna pre neaktívne */
+  -webkit-appearance: none;
+  /* Vypne iOS defaults */
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .button-language:hover {
