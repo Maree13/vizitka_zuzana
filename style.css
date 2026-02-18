@@ -446,7 +446,8 @@ h2 {
   header {
     justify-content: space-between;
     align-items: center;
-    padding: 10px 35px 10px 10px;
+    /* padding: 10px 35px 10px 10px; */
+    padding: 10px 5px;
     /* menší padding */
 
 
@@ -508,14 +509,15 @@ h2 {
   }
 
   .menu-logo {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     margin: 0;
     order: 1;
   }
 
   .button-language {
     font-size: 18px;
+    margin: 0;
   }
 
   .button-language.active {
@@ -525,10 +527,10 @@ h2 {
   .menu-language-container {
     order: 3;
     display: flex;
-    gap: 3px;
-    max-width: 30%;
-    margin-left: 20px;
-    margin-right: 20px;
+    gap: 2px;
+    /* max-width: 30%; */
+    /* margin-left: 20px;
+    margin-right: 20px; */
   }
 
   section,
@@ -568,6 +570,6 @@ h2 {
   }
 
   .button_sk {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 }
