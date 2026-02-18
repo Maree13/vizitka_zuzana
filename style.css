@@ -461,7 +461,6 @@ h2 {
     display: none;
     /* skryté menu */
     flex-direction: column;
-    /* background-color: var(--background-light); */
     position: absolute;
     top: 200px;
     /* výška headeru */
@@ -470,7 +469,6 @@ h2 {
     text-align: center;
     padding: 30px 0;
     margin: 0;
-    /* border: solid black 4px; */
     background-color: whitesmoke;
   }
 
@@ -478,7 +476,6 @@ h2 {
     display: flex;
     /* zobrazí sa po kliknutí */
     margin-top: -40px;
-    /* border: solid black 4px; */
   }
 
   .menu-icon {
@@ -495,28 +492,21 @@ h2 {
   .nav-list {
     flex-direction: column;
     gap: 15px;
-    /* background-color: var(--white); */
-    /* background-color: whitesmoke; */
     width: 100%;
-    /* margin-top: 40px; */
-    /* border: solid; */
   }
 
   .nav-list li:last-child {
     margin-bottom: 50px;
-    /* alebo margin-bottom, margin-left, podľa potreby */
   }
 
   .nav-list li:first-child {
     margin-top: 50px;
-    /* alebo margin-bottom, margin-left, podľa potreby */
   }
 
   .menu-logo {
     width: 150px;
     height: 150px;
     margin: 0;
-    /* margin-left: 15px; */
     order: 1;
   }
 
@@ -530,11 +520,10 @@ h2 {
 
   .menu-language-container {
     order: 3;
-    /* Jazyky vpravo */
     display: flex;
     gap: 3px;
     max-width: 30%;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 20px;
   }
 
