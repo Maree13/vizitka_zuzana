@@ -161,7 +161,7 @@ section,
 
 .menu-icon {
   display: none;
-  margin-right: 50px;
+  /* margin-right: 50px; test ci to vobec nieco meni */
 }
 
 
@@ -487,7 +487,6 @@ h2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-right: 20px;
   }
 
   .nav-list {
@@ -562,5 +561,9 @@ h2 {
 
   .scroll-to-top {
     bottom: 100px;
+  }
+
+  .button_sk {
+    margin-left: 30px;
   }
 }
