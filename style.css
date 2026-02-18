@@ -527,7 +527,8 @@ h2 {
   .menu-language-container {
     order: 3;
     display: flex;
-    gap: 2px;
+    justify-content: space-around;
+    /* gap: 1; */
     /* max-width: 30%; */
     /* margin-left: 20px;
     margin-right: 20px; */
