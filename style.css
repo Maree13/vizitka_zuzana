@@ -444,7 +444,7 @@ h2 {
   } */
 
   header {
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px 35px 10px 10px;
     /* menší padding */
