@@ -293,8 +293,12 @@ h2 {
 
 /* RECENZIE*/
 
-.recenzie {
+.recenzie p {
   font-style: italic;
+}
+
+.recenzie h2 {
+  font-style: normal;
 }
 
 .symbol-heart {
