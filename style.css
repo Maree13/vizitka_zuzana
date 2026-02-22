@@ -26,7 +26,6 @@ body {
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
   padding-top: 180px;
-  /* výška headeru (150px logo + 30px padding) */
 }
 
 
@@ -96,7 +95,6 @@ p,
 section,
 #aboutme {
   scroll-margin-top: 200px;
-  /* výška headeru + trochu rezervy */
 }
 
 /* BUTTON  */
@@ -148,10 +146,8 @@ section,
 /* AKTÍVNY JAZYK - zvýraznený */
 .button-language.active {
   opacity: 1;
-  /* font-weight: bold; */
   font-size: 42px;
   color: var(--black-licorice);
-  /* alebo akákoľvek farba ktorú chceš */
   transform: scale(1.1);
 }
 
@@ -161,7 +157,6 @@ section,
 
 .menu-icon {
   display: none;
-  /* margin-right: 50px; test ci to vobec nieco meni */
 }
 
 
@@ -172,7 +167,6 @@ section,
   position: relative;
   width: 100%;
   height: 80vh;
-  /* nastavíš podľa potreby, napr. 60vh alebo 500px */
   background-image: url('images/hero03.svg');
   background-size: cover;
   background-position: right top;
@@ -236,10 +230,6 @@ h2 {
   flex-direction: column;
 }
 
-/* .aboutme-paragraph {
-  width: 50%;
-} */
-
 .aboutme-image_wrapper {
   text-align: center;
   margin-top: 30px;
@@ -286,7 +276,6 @@ h2 {
   top: 0.1em;
   font-size: 1.4rem;
   color: var(--darkred);
-  /* alebo jemná ružová */
 }
 
 
@@ -383,9 +372,6 @@ h2 {
 
   /* Plynulá animácia */
   transition: all 0.3s ease;
-
-  /* Tieň */
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
 }
 
 /* Keď sa má zobraziť */
@@ -528,10 +514,6 @@ h2 {
     order: 3;
     display: flex;
     justify-content: space-around;
-    /* gap: 1; */
-    /* max-width: 30%; */
-    /* margin-left: 20px;
-    margin-right: 20px; */
   }
 
   section,
