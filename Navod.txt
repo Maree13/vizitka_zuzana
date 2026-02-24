@@ -1,0 +1,262 @@
+═══════════════════════════════════════════════
+NÁVOD NA NAHRATÍ WEBU - S LÁSKOU NA ZEMI
+═══════════════════════════════════════════════
+
+OBSAH BALÍČKA:
+- index.html (slovenská verzia)
+- en.html (anglická verzia)
+- cz.html (česká verzia)
+- style.css (štýly)
+- script.js (funkcie: prepínanie jazykov, menu, animácie)
+- images/ (všetky obrázky a logo)
+
+═══════════════════════════════════════════════
+KROK 1: KÚPTE DOMÉNU
+═══════════════════════════════════════════════
+
+Odporúčané registrátory v ČR:
+- Wedos.cz - 249 Kč/rok (.cz doména)
+- Active24.cz
+- Webglobe.cz
+
+Odporúčaná doména: slaskounazemi.cz
+
+═══════════════════════════════════════════════
+KROK 2: KÚPTE HOSTING
+═══════════════════════════════════════════════
+
+Odporúčané hostingy:
+- Wedos START - 79 Kč/mesiac
+  (obsahuje: web hosting + 5 emailov + SSL certifikát)
+- Active24 WEBHOSTING S - 89 Kč/mesiac
+- Webglobe MINI - 99 Kč/mesiac
+
+ČO POTREBUJETE:
+✓ Web hosting (priestor pre súbory)
+✓ Email účty (kontakt@slaskounazemi.cz)
+✓ SSL certifikát (HTTPS) - väčšinou zadarmo
+
+═══════════════════════════════════════════════
+KROK 3: NAHRAJTE SÚBORY NA HOSTING
+═══════════════════════════════════════════════
+
+VARIANT A - Cez webové rozhranie (jednoduchšie):
+1. Prihláste sa do administrácie hostingu
+2. Nájdite "Správca súborov" / "File Manager"
+3. Otvorte priečinok "www" alebo "public_html"
+4. Nahrajte VŠETKY súbory z tohto ZIP
+   (môžete ich označiť a pretiahnuť)
+5. Skontrolujte že štruktúra je správna:
+   www/
+   ├── index.html
+   ├── en.html
+   ├── cz.html
+   ├── style.css
+   ├── script.js
+   └── images/
+
+VARIANT B - Cez FTP (pokročilé):
+1. Stiahnite FTP program (napr. FileZilla - zadarmo)
+2. Pripojte sa cez FTP údaje z hostingu
+3. Nahrajte všetky súbory do priečinka www/
+
+═══════════════════════════════════════════════
+KROK 4: PRIPOJTE DOMÉNU
+═══════════════════════════════════════════════
+
+V administrácii hostingu:
+1. Nájdite "Domény" alebo "Domains"
+2. Pridajte svoju doménu (slaskounazemi.cz)
+3. Pripojte ju k web hostingu
+
+POZNÁMKA: DNS aktualizácia trvá 24-48 hodín
+
+═══════════════════════════════════════════════
+KROK 5: NASTAVTE EMAIL
+═══════════════════════════════════════════════
+
+V administrácii hostingu:
+1. Nájdite "Emaily" / "Email účty"
+2. Vytvorte email: kontakt@slaskounazemi.cz
+3. Nastavte heslo
+4. Môžete ho preposiť do Gmail alebo použiť webmail
+
+═══════════════════════════════════════════════
+KROK 6: SKONTROLUJTE ŽE VŠETKO FUNGUJE
+═══════════════════════════════════════════════
+
+Otvorte v prehliadači:
+✓ www.slaskounazemi.cz (slovenská verzia)
+✓ www.slaskounazemi.cz/en.html (anglická)
+✓ www.slaskounazemi.cz/cz.html (česká)
+
+Skontrolujte:
+✓ Prepínanie jazykov funguje
+✓ Hamburger menu funguje (na mobile)
+✓ Všetky obrázky sa zobrazujú
+✓ Email a telefón sú klikateľné
+✓ SSL certifikát je aktívny (https://)
+
+═══════════════════════════════════════════════
+TECHNICKÁ PODPORA
+═══════════════════════════════════════════════
+
+ZADARMA do 24.3.2025:
+- Pomoc s nahratím
+- Riešenie technických problémov
+- Odpovede na otázky
+
+Kontakt: [tvoj email]
+
+PO TOMTO DÁTUME:
+- Hodinová sadzba: 500 Kč/hod
+- Menšie zmeny (text, fotka): 300 Kč
+
+═══════════════════════════════════════════════
+DÔLEŽITÉ UPOZORNENIA
+═══════════════════════════════════════════════
+
+⚠ NEODSTRAŇUJTE autorskú poznámku z footera
+   (© 2026 Designed by Mari. All rights reserved.)
+
+⚠ PRAVIDELNE ZÁLOHUJTE súbory
+   (minimálne 1× mesačne)
+
+⚠ AKTUALIZUJTE kontaktné údaje
+   V súboroch index.html, en.html, cz.html
+   nájdite sekciu "KONTAKT" a zmeňte email/telefón
+
+⚠ ODPORÚČAM SSL certifikát (HTTPS)
+   Väčšina hostingov ho má zadarmo v cene
+
+═══════════════════════════════════════════════
+AK SA STRETNETE S PROBLÉMOM
+═══════════════════════════════════════════════
+
+1. Kontaktujte podporu hostingu (live chat)
+   - Wedos má vynikajúcu podporu v češtine
+   - Môžu pomôcť s nahratím aj nastavením
+
+2. Napíšte mi email (do 24.3.2025 zadarmo)
+
+3. Youtube tutoriály:
+   - "Wedos ako nahrať web"
+   - "Ako nahrať HTML stránku na hosting"
+
+═══════════════════════════════════════════════
+
+Web dizajn: Mariana Sarovic
+Email: sarovicmariana@gmail.com
+Dátum odovzdania: 24.2.2025
+Verzia: 1.0 - Finálna
+
+═══════════════════════════════════════════════
+
+3. Obsah KONTAKT.txt:
+txtKONTAKTNÉ INFORMÁCIE
+═══════════════════════════════════════════════
+
+Web designer: Mari
+Email: [tvoj email]
+Telefón: [tvoj telefón - voliteľné]
+
+PROJEKT: S Láskou Na Zemi - Web stránka
+ODOVZDANÉ: 24.2.2025
+
+═══════════════════════════════════════════════
+TECHNICKÁ PODPORA
+═══════════════════════════════════════════════
+
+ZADARMA: do 24.3.2025
+- Pomoc s nahratím webu
+- Riešenie technických problémov
+- Odpovede na otázky
+
+PLATENÁ PODPORA: po 24.3.2025
+- Hodinová sadzba: 500 Kč/hod
+- Menšie úpravy: 300 Kč
+
+═══════════════════════════════════════════════
+LICENČNÉ PODMIENKY
+═══════════════════════════════════════════════
+
+Web dizajn a kód sú autorským dielom Mari.
+Klientka získava výhradnú licenciu na používanie.
+
+Autorka si vyhradzuje právo:
+✓ Použiť web vo svojom portfóliu
+✓ Použiť technické riešenia pre iných klientov
+
+Klientka nemá právo:
+✗ Predávať web tretím stranám
+✗ Odstraňovať autorskú poznámku z footera
+✗ Tvrdiť že je autorkou dizajnu
+
+═══════════════════════════════════════════════
+```
+
+---
+
+## 📧 Email ktorý jej pošleš:
+```
+Predmet: ✅ Odovzdanie webu - S Láskou Na Zemi
+
+Ahoj Zuzana! 😊
+
+Posielam ti finálnu verziu webu. V prílohe nájdeš:
+
+📦 slaskounazemi_web_final.zip
+
+Obsahuje:
+✅ Všetky HTML súbory (3 jazyky: SK, EN, CZ)
+✅ CSS a JavaScript súbory
+✅ Všetky obrázky a logo
+✅ Podrobný NÁVOD na nahratí webu
+✅ Kontaktné informácie
+
+────────────────────────────────────
+
+ČO ĎALEJ:
+
+1. Rozbaľte ZIP súbor
+2. Prečítajte NAVOD.txt
+3. Kúpte doménu a hosting (odporúčam Wedos.cz)
+4. Nahrajte súbory podľa návodu
+5. Ak niečo nebude fungovať - napíšte mi!
+
+────────────────────────────────────
+
+TECHNICKÁ PODPORA:
+
+Do 24.3.2025 (1 mesiac) vám pomôžem ZADARMA s:
+- Nahratím webu
+- Riešením technických problémov
+- Odpoveďami na otázky
+
+Po tomto dátume môžeme spolupracovať na hodinovej báze.
+
+────────────────────────────────────
+
+DÔLEŽITÉ:
+
+⚠ Prosím neodstraňujte autorskú poznámku z footera
+   (je to štandard v IT a moja ochrana)
+
+⚠ Pravidelne zálohujte súbory
+
+⚠ Hostingová podpora vám tiež vie pomôcť s nahratím
+   (Wedos má skvelú live chat podporu)
+
+────────────────────────────────────
+
+Teším sa na spoluprácu a prajem úspešný štart! 🚀
+
+Ak budete mať akékoľvek otázky, kľudne sa ozvite.
+
+S pozdravom,
+Mari
+
+────────────────────────────────────
+Mari | Web Design
+Email: [tvoj email]
+Tel: [voliteľné]
