@@ -157,7 +157,7 @@ txtKONTAKTNÉ INFORMÁCIE
 ═══════════════════════════════════════════════
 
 Web designer: Mari
-Email: [tvoj email]
+Email: sarovicmariana@gmail.com
 Telefón: [tvoj telefón - voliteľné]
 
 PROJEKT: S Láskou Na Zemi - Web stránka
@@ -194,16 +194,6 @@ Klientka nemá právo:
 
 ═══════════════════════════════════════════════
 ```
-
----
-
-
-```
-Predmet: ✅ Odovzdanie webu - S Láskou Na Zemi
-
-Ahoj Zuzana! 😊
-
-Posielam ti finálnu verziu webu. V prílohe nájdeš:
 
 📦 slaskounazemi_web_final.zip
 
@@ -258,5 +248,5 @@ Mari
 
 ────────────────────────────────────
 Mari | Web Design
-Email: [tvoj email]
+Email: sarovicmariana
 Tel: [voliteľné]
