@@ -197,7 +197,7 @@ Klientka nemá právo:
 
 ---
 
-## 📧 Email ktorý jej pošleš:
+
 ```
 Predmet: ✅ Odovzdanie webu - S Láskou Na Zemi
 
