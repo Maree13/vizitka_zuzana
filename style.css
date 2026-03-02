@@ -388,6 +388,20 @@ h2 {
   /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); */
 }
 
+/* H1 FOR ROBOTS ONLY */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
 /* Responzívne */
 @media (max-width: 1050px) {
   .scroll-to-top {
