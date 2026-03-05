@@ -63,22 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     logo.style.visibility = 'visible';
   }
 
-  // 3. Skry aktuálne jazykové tlačidlo
-  // if (config) {
-  //   const currentButton = document.querySelector(`.${config.buttonClass}`);
-  //   if (currentButton) {
-  //     currentButton.style.display = 'none';
-  //   }
-  // }
-
-  // 3. Skry aktuálne jazykové tlačidlo
-  // if (config) {
-  //   const currentButton = document.querySelector(`.${config.buttonClass}`);
-  //   if (currentButton) {
-  //     currentButton.style.display = 'none';
-  //   }
-  // }
-
   // 3. Zvýrazni aktuálne jazykové tlačidlo
   if (config) {
     // Odstráň active class zo všetkých tlačidiel
@@ -225,28 +209,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
-
-// ============================================
-// SCROLL TO TOP BUTTON
-// ============================================
-// const scrollToTopBtn = document.getElementById('scroll-to-top');
-
-// Zobraz tlačidlo po scrolle
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > 300) {
-//     scrollToTopBtn.classList.add('show');
-//   } else {
-//     scrollToTopBtn.classList.remove('show');
-//   }
-// });
-
-// // Kliknutie na tlačidlo
-// scrollToTopBtn.addEventListener('click', () => {
-//   window.scrollTo({
-//     top: 0,
-//     behavior: 'smooth',
-//   });
-// });
 
 // ============================================
 // SCROLL TO TOP BUTTON
