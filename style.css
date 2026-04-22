@@ -302,10 +302,17 @@ h2 {
   margin: 0 auto;
 }
 
+.pricing_section h2 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  color: var(--darkred);
+  letter-spacing: 3px;
+  margin: 30px;
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  /* gap: 1.25rem; */
   gap: 2rem;
   padding: 0 20px;
 }
@@ -322,32 +329,28 @@ h2 {
 }
 
 .pricing-item:hover {
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: var(--darkred);
 }
-
-/* .pricing-item.featured {
-  border: 2px solid var(--red);
-} */
 
 .pricing-item h3 {
   font-family: "Pacifico", cursive;
   font-size: 1rem;
   font-weight: 400;
-  color: var(--black-licorice);
+  color: var(--darkred);
   letter-spacing: 1px;
   line-height: 1.4;
 }
 
 .pricing-item p {
-  /* color: #555; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
   line-height: 1.6;
   margin: 0;
-  /* flex: 1; */
+  flex: 1;
 }
 
 .pricing-item .price {
-  /* font-family: "Pacifico", cursive; */
-  /* font-size: 1.4rem; */
+  font-family: "Inconsolata", monospace;
   font-size: 1.2rem;
   color: var(--darkred);
   letter-spacing: 2px;
@@ -357,13 +360,6 @@ h2 {
   margin-top: auto;
 }
 
-/* .pricing-divider {
-  width: 30px;
-  height: 2px;
-  background-color: var(--red);
-  opacity: 0.5;
-  border-radius: 2px;
-} */
 
 
 
