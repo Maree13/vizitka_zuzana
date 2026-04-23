@@ -342,6 +342,7 @@ h2 {
   color: var(--darkred);
   letter-spacing: 1px;
   line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
 .pricing-item p {
@@ -349,7 +350,7 @@ h2 {
   font-size: 15px;
   line-height: 1.6;
   margin: 0;
-
+  margin-bottom: 1rem;
 }
 
 .pricing-item .price {
