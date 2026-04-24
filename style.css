@@ -313,7 +313,7 @@ h2 {
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
   padding: 0 20px;
   align-items: stretch;
 }
