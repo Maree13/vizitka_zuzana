@@ -23,8 +23,8 @@ body {
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
   background-color: var(--white);
-  font-family: 'Inconsolata', monospace;
-  font-size: 18px;
+  /* font-family: 'Inconsolata', monospace;
+  font-size: 18px; */
   padding-top: 180px;
 }
 
@@ -483,6 +483,42 @@ h2 {
     bottom: 20px;
     right: 20px;
   }
+}
+
+/* //////////////////////////////////// */
+/* VIDEO SECTION */
+
+.interviews {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.interviews h2 {
+  margin-bottom: 50px;
+}
+
+.video-item {
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  /* vycentrovanie */
+}
+
+.video-item iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: none;
+  border-radius: 12px;
+}
+
+.interviews_title {
+  font-family: "Pacifico", cursive;
+  color: var(--black-licorice);
+  margin-top: 50px;
+  margin-bottom: 45px;
 }
 
 
