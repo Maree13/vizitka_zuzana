@@ -22,9 +22,6 @@ body {
   background-color: var(--white);
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
-  background-color: var(--white);
-  /* font-family: 'Inconsolata', monospace;
-  font-size: 18px; */
   padding-top: 180px;
 }
 
@@ -40,10 +37,8 @@ header {
   left: 0;
   width: 100%;
   background-color: var(--white);
-  /* alebo akákoľvek farba */
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  /* voliteľný tieň */
   height: 180px;
 }
 
@@ -91,7 +86,7 @@ p,
   font-weight: bold;
 }
 
-/* Odsadenie pre anchor linky kvôli fixnému headeru */
+/* Odsadenie pre anchor linky kvÃ´li fixnÃ©mu headeru */
 section,
 #aboutme {
   scroll-margin-top: 200px;
@@ -119,11 +114,11 @@ section,
   transition: all 0.3s ease;
   z-index: 2;
   opacity: 0.5;
-  /* Neaktívne sú svetlejšie */
+  /* NeaktÃ­vne sÃº svetlejÅ¡ie */
   font-weight: normal;
   cursor: pointer;
   color: var(--black-licorice) !important;
-  /* ← Čierna pre neaktívne */
+  /* â† ÄŒierna pre neaktÃ­vne */
   -webkit-appearance: none;
   /* Vypne iOS defaults */
   -moz-appearance: none;
@@ -143,7 +138,7 @@ section,
   margin-right: 20px;
 }
 
-/* AKTÍVNY JAZYK - zvýraznený */
+/* AKTÃVNY JAZYK - zvÃ½raznenÃ½ */
 .button-language.active {
   opacity: 1;
   font-size: 42px;
@@ -170,9 +165,7 @@ section,
   background-image: url('images/hero03.svg');
   background-size: cover;
   background-position: right top;
-  /* vyplní celý priestor */
   background-position: start;
-  /* zameria stred obrázka */
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -204,7 +197,6 @@ section,
 p,
 .paragraph {
   margin: 50px;
-  text-align: center;
   text-align: center;
 }
 
@@ -267,10 +259,11 @@ h2 {
   margin-bottom: 1.2rem;
   text-align: left;
   line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
 }
 
 .myoffer-list li::before {
-  content: "•";
+  content: "\2022";
   position: absolute;
   left: 0;
   top: 0.1em;
@@ -293,6 +286,72 @@ h2 {
 .symbol-heart {
   font-style: normal;
 }
+
+
+
+/* =================================== */
+/* CERTIFICATIONS (ZladenÃ© s My Offer) */
+/* =================================== */
+
+.certifications_section {
+  padding: 2rem 1rem 3rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.certifications_section h2 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  color: var(--darkred);
+  letter-spacing: 3px;
+  margin: 30px;
+}
+
+/* Nadpis vycentrovanÃ½ nad zoznamom */
+.certifications_section h3 {
+  font-family: "Pacifico", cursive;
+  color: var(--black-licorice);
+  font-size: 1.5rem;
+  font-weight: normal;
+  max-width: 70%;
+  margin: 2.5rem auto 1.5rem;
+  text-align: center;
+}
+
+/* Seznam certifikacÃ­ - kopie .myoffer-list */
+.certifications-list {
+  list-style: none;
+  max-width: 70%;
+  margin: 0 auto 40px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.certifications-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 1.2rem;
+  text-align: left;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+}
+
+.certifications-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 1.4rem;
+  color: var(--darkred);
+}
+
+/* DrobnÃ¡ poznÃ¡mka u anglickÃ©ho certifikÃ¡tu */
+.certifications-list .note {
+  color: #666;
+  font-weight: normal;
+  font-style: italic;
+}
+
 
 /* PRICING */
 
@@ -343,6 +402,7 @@ h2 {
   letter-spacing: 1px;
   line-height: 1.4;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .pricing-item p {
@@ -437,16 +497,16 @@ h2 {
   font-size: 24px;
   z-index: 999;
 
-  /* Skryté na začiatku */
+  /* SkrytÃ© na zaÄiatku */
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
 
-  /* Plynulá animácia */
+  /* PlynulÃ¡ animÃ¡cia */
   transition: all 0.3s ease;
 }
 
-/* Keď sa má zobraziť */
+/* KeÄ sa mÃ¡ zobraziÅ¥ */
 .scroll-to-top.show {
   opacity: 1;
   visibility: visible;
@@ -457,7 +517,6 @@ h2 {
 .scroll-to-top:hover {
   background-color: var(--black-licorice);
   transform: translateY(-5px);
-  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); */
 }
 
 /* H1 FOR ROBOTS ONLY */
@@ -474,7 +533,7 @@ h2 {
 }
 
 
-/* Responzívne */
+/* ResponzÃ­vne */
 @media (max-width: 1050px) {
   .scroll-to-top {
     width: 45px;
@@ -514,11 +573,13 @@ h2 {
   border-radius: 12px;
 }
 
-.interviews_title {
+.interviews_title,
+h3 {
   font-family: "Pacifico", cursive;
   color: var(--black-licorice);
   margin-top: 50px;
   margin-bottom: 45px;
+  text-align: center;
 }
 
 
@@ -536,30 +597,20 @@ h2 {
   }
 }
 
-@media (max-width: 1135px) {
+@media (max-width: 1400px) {
   body {
     font-size: 16px;
-    /* padding-top: 0; */
     padding-top: 170px;
-    /* ← Pre fixný header */
+    /* â† Pre fixnÃ½ header */
   }
-
-  /* header {
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    position: relative;
-  } */
 
   header {
     justify-content: space-between;
     align-items: center;
-    /* padding: 10px 35px 10px 10px; */
     padding: 10px 5px;
-    /* menší padding */
+    /* menÅ¡Ã­ padding */
 
-
-    /* Fixný aj na mobile */
+    /* FixnÃ½ aj na mobile */
     position: fixed;
     top: 0;
     left: 0;
@@ -572,11 +623,11 @@ h2 {
 
   nav {
     display: none;
-    /* skryté menu */
+    /* skrytÃ© menu */
     flex-direction: column;
     position: absolute;
     top: 200px;
-    /* výška headeru */
+    /* vÃ½Å¡ka headeru */
     left: 0;
     width: 100%;
     text-align: center;
@@ -587,7 +638,7 @@ h2 {
 
   nav.show {
     display: flex;
-    /* zobrazí sa po kliknutí */
+    /* zobrazÃ­ sa po kliknutÃ­ */
     margin-top: -40px;
   }
 
@@ -640,20 +691,11 @@ h2 {
 
   section,
   #aboutme {
-    /* ← pridaj ID */
+    /* â† pridaj ID */
     scroll-margin-top: 180px;
   }
 
-  /* test */
-
   /* HERO */
-
-  /* .hero-image_container {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      background-position: right top;
-    } */
 
   .button-herotitle {
     margin-bottom: 50px;
