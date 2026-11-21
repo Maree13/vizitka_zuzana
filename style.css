@@ -790,4 +790,30 @@ h3 {
   .button_sk {
     margin-left: 20px;
   }
+
+
+  /* BOČNÉ ODSADENIE TEXTU NA MOBILE A TABLETE */
+  @media (max-width: 900px) {
+
+    p,
+    .paragraph {
+      padding: 0 24px;
+    }
+
+    .myoffer-list,
+    .certifications-list,
+    .aboutthemethod-list {
+      padding: 0 24px;
+    }
+
+    /* karty s cenami majú vlastný padding, aby sa neodsadili dvakrát */
+    .pricing-item p {
+      padding: 0;
+    }
+
+    /* päta: copyright a pod. nech ostane tak, ako je */
+    .footer p {
+      padding: 0;
+    }
+  }
 }
